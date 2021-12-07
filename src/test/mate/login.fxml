@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<SplitPane dividerPositions="0.5502" minHeight="600.0" minWidth="790.0" prefHeight="600.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.mate.LoginController">
+  <items>
+      <VBox alignment="CENTER" style="-fx-background-color: #673ab7;" />
+      <VBox alignment="CENTER" fillWidth="false" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" SplitPane.resizableWithParent="false">
+         <children>
+            <TextField fx:id="name" promptText="Name" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Region prefHeight="54.0" prefWidth="196.0" />
+            <TextField fx:id="matric_no" layoutX="10.0" layoutY="197.0" promptText="Matric_no" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Region layoutX="10.0" layoutY="182.0" prefHeight="54.0" prefWidth="196.0" />
+            <Button mnemonicParsing="false" onAction="#Verify" style="-fx-background-color: #673ab7;" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Region layoutX="10.0" layoutY="222.0" prefHeight="54.0" prefWidth="196.0" />
+            <Label fx:id="error" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+  </items>
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+</SplitPane>

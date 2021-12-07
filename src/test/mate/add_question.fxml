@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="816.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.mate.Add_questionController">
+   <children>
+      <Label fx:id="iConn" alignment="TOP_CENTER" text="ADD A NEW QUESTION">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="54.0" prefWidth="716.0">
+         <children>
+            <Label fx:id="testNumb" text="Question 1:" />
+            <Pane prefHeight="39.0" prefWidth="146.0" />
+            <TextField fx:id="textTTimeH" promptText="Test Time hour" />
+            <Pane prefHeight="39.0" prefWidth="175.0" />
+            <TextField  fx:id="textTTimeM" layoutX="71.0" layoutY="17.0" promptText="Test Time minutes" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <TextArea fx:id="textQuestion" prefHeight="213.0" prefWidth="590.0" promptText="Question" wrapText="true" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextArea>
+         </children>
+         <VBox.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox>
+         <children>
+            <TextField fx:id="textOption_A" prefHeight="46.0" prefWidth="570.0" promptText="Option A">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textOption_B" layoutX="25.0" layoutY="303.0" prefHeight="46.0" prefWidth="570.0" promptText="Option B">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textOption_C" layoutX="25.0" layoutY="349.0" prefHeight="46.0" prefWidth="570.0" promptText="Option C">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="textOption_D" layoutX="25.0" layoutY="395.0" prefHeight="46.0" prefWidth="570.0" promptText="Option D">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox prefHeight="104.0" prefWidth="416.0">
+         <children>
+            <VBox fillWidth="false" prefHeight="104.0" prefWidth="386.0">
+               <children>
+                  <Label text="Correct Answer">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="A" mnemonicParsing="false" text="A">
+                     <VBox.margin>
+                        <Insets bottom="3.0" />
+                     </VBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="group" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="B" layoutX="10.0" layoutY="37.0" mnemonicParsing="false" text="B" toggleGroup="$group">
+                     <VBox.margin>
+                        <Insets bottom="3.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="C" layoutX="10.0" layoutY="54.0" mnemonicParsing="false" text="C" toggleGroup="$group">
+                     <VBox.margin>
+                        <Insets bottom="3.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="D" layoutX="10.0" layoutY="71.0" mnemonicParsing="false" text="D" toggleGroup="$group" />
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets left="15.0" right="15.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <Button id="btn" fx:id="iFirst" layoutX="90.0" layoutY="6.0" mnemonicParsing="false" onAction="#btnFirst" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #673ab7;" text="First" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Region prefHeight="39.0" prefWidth="117.0" />
+            <Button id="btn" fx:id="iPrev" layoutX="190.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnPrev" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #673ab7;" text="Previous" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Region layoutX="447.0" layoutY="10.0" prefHeight="39.0" prefWidth="102.0" />
+            <Button id="btn" fx:id="iNext" layoutX="322.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnNext" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #673ab7;" text="Next" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Region layoutX="185.0" layoutY="10.0" prefHeight="39.0" prefWidth="98.0" />
+            <Button id="btn" fx:id="iLast" layoutX="421.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnLast" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #673ab7;" text="Last" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="25.0" layoutY="633.0">
+         <children>
+            <Button id="btn" fx:id="NQuestion" layoutX="449.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnNQuestion" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #673ab7;" text="New" textFill="#f3ff46">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" />
+               </HBox.margin>
+            </Button>
+            <Region prefHeight="0.0" prefWidth="200.0" />
+            <Button id="btn" fx:id="iDelete" layoutX="233.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #673ab7;" text="Delete" textFill="#ee7979">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Region layoutX="203.0" layoutY="10.0" prefHeight="0.0" prefWidth="200.0" />
+            <Button id="btn" fx:id="iUpdate" layoutX="36.0" layoutY="6.0" mnemonicParsing="false" onAction="#btnUpdate" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #673ab7;" text="Update" textFill="#b8ebc5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="25.0" layoutY="674.0">
+         <children>
+            <Button id="btn" fx:id="SNQuestion" layoutX="78.0" layoutY="4.0" mnemonicParsing="false" onAction="#btnSNQuestion" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: #673ab7;" text="Save new question" textFill="#836fb8">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Region prefHeight="0.0" prefWidth="200.0" />
+            <Button id="btn" fx:id="CNQuestion" layoutX="333.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnCNQuestion" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: #673ab7;" text="Cancel new question" textFill="#836fb8">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Button fx:id="BTLPage" mnemonicParsing="false" onAction="#btnBTLPage" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: #673ab7;" text="Back to Login page" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+</VBox>

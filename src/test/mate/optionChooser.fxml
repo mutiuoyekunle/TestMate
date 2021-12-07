@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="test.mate.OptionChooserController">
+   <children>
+      <Button layoutX="102.0" layoutY="91.0" mnemonicParsing="false" onAction="#newDB" prefHeight="43.0" prefWidth="384.0" text="Create a new database">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="102.0" layoutY="192.0" mnemonicParsing="false" onAction="#oldDB" prefHeight="43.0" prefWidth="384.0" text="Continue from existing">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

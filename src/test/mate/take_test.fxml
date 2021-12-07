@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" minHeight="600.0" minWidth="750.0" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.mate.Take_test">
+   <children>
+      <ToolBar prefHeight="45.0" prefWidth="605.0" style="-fx-background-color: #673ab7;" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+         <items>
+            <Label text="CSC 211" textFill="WHITE" HBox.hgrow="NEVER">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="26.0" prefWidth="125.0" HBox.hgrow="ALWAYS" />
+            <Label fx:id="testNumb" alignment="CENTER" text="Question 2 out of 15" textFill="WHITE" HBox.hgrow="NEVER">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="26.0" prefWidth="135.0" HBox.hgrow="ALWAYS" />
+            <Label fx:id="time" text="08 : 03 : 46" textFill="WHITE" HBox.hgrow="NEVER">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </items>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </ToolBar>
+      <HBox VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="100.0" />
+         </VBox.margin>
+         <children>
+            <HBox fillHeight="false" prefHeight="390.0" prefWidth="369.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextArea fx:id="textQuestion" editable="false" focusTraversable="false" layoutX="8.0" layoutY="9.0" prefHeight="303.0" promptText="int x = 1 , y = 2 ; int *ip ; ip = &amp;x ; y = *ip ; *ip =3. What is the value of y? " wrapText="true">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextArea>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </HBox.margin>
+            </HBox>
+            <VBox prefWidth="369.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox style="-fx-border-color: #e4e4e4;">
+                     <children>
+                        <Pane layoutX="17.0" layoutY="14.0"  prefHeight="55.0" prefWidth="251.0" style="-fx-background-color: #fff; -fx-border-color: #e4e4e4; -fx-border-width: 2; -fx-border-radius: 3;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="15.0" top="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <RadioButton fx:id="optionA" mnemonicParsing="false" prefHeight="55.0" prefWidth="328.0">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="option" />
+                                 </toggleGroup>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <Label fx:id="textOption_A" layoutX="14.0" layoutY="14.0" text="This is option A" textFill="#8a7c7c">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="15.0" layoutY="15.0"  prefHeight="55.0" prefWidth="251.0" style="-fx-background-color: #fff; -fx-border-color: #e4e4e4; -fx-border-width: 2; -fx-border-radius: 3;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <RadioButton fx:id="optionB" mnemonicParsing="false" prefHeight="55.0" prefWidth="328.0" toggleGroup="$option">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <Label fx:id="textOption_B" layoutX="14.0" layoutY="14.0" text="This is option B" textFill="#8a7c7c">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="15.0" layoutY="70.0"  prefHeight="55.0" prefWidth="251.0" style="-fx-background-color: #fff; -fx-border-color: #e4e4e4; -fx-border-width: 2; -fx-border-radius: 3;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <RadioButton fx:id="optionC" mnemonicParsing="false" prefHeight="55.0" prefWidth="328.0" toggleGroup="$option">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <Label fx:id="textOption_C" layoutX="16.0" layoutY="19.0" text="This is option C" textFill="#8a7c7c">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="15.0" layoutY="125.0"  prefHeight="55.0" prefWidth="251.0" style="-fx-background-color: #fff; -fx-border-color: #e4e4e4; -fx-border-width: 2; -fx-border-radius: 3;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <RadioButton fx:id="optionD" mnemonicParsing="false" prefHeight="55.0" prefWidth="328.0" toggleGroup="$option">
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <Label fx:id="textOption_D" layoutX="14.0" layoutY="14.0" text="This is option D" textFill="#8a7c7c">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="627.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button mnemonicParsing="false" onAction="#btnPrev" style="-fx-background-color: #673ab7;" text="PREVIOUS" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button layoutX="10.0" layoutY="29.0" mnemonicParsing="false" onAction="#btnNext" prefHeight="39.0" prefWidth="113.0" style="-fx-background-color: #673ab7;" text="NEXT" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button layoutX="62.0" layoutY="29.0" mnemonicParsing="false" onAction="#alertbox" style="-fx-background-color: #673ab7;" text="SUBMIT" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
